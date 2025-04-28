@@ -20,7 +20,7 @@ const App = () => {
     return () => window.removeEventListener("storage", checkAuth);
   }, []);
 
-  const handleLogout = () => {
+  const handleLogout = () => { 
     localStorage.removeItem("userId");
     localStorage.removeItem("token");
     setIsAuthenticated(false); // Update authentication state
